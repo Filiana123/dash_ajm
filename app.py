@@ -517,7 +517,7 @@ elif menu == "Analisis Clustering":
     fig_heat = px.imshow(
         corr,
         color_continuous_scale=["#FFF7E0", "#F6C90E", "#D4A017", "#8C5A10"],
-        title="Heatmap Korelasi RFM (Gold Palette)",
+        title="Heatmap Korelasi RFM",
         text_auto=True,
         aspect="auto"
     )
@@ -594,4 +594,5 @@ elif menu == "Analisis Clustering":
                            title="Top 10 Monetary Tertinggi", 
                            color_discrete_sequence=[PALETTE["bronze"]]) 
             fig_m.update_layout(plotly_dark_theme, height=400, yaxis=dict(autorange="reversed"))
+
             st.plotly_chart(fig_m, use_container_width=True)
